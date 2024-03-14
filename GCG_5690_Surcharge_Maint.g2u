@@ -1,0 +1,1798 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.FormSurcharge..Create(BaseForm)
+Gui.FormSurcharge..Caption("Surcharge Maintenance Interface")
+Gui.FormSurcharge..Size(15435,10290)
+Gui.FormSurcharge..MinX(0)
+Gui.FormSurcharge..MinY(0)
+Gui.FormSurcharge..Position(0,0)
+Gui.FormSurcharge..BackColor(-2147483633)
+Gui.FormSurcharge..MousePointer(0)
+Gui.FormSurcharge..Event(UnLoad,FormSurcharge_UnLoad)
+Gui.FormSurcharge..AlwaysOnTop(False)
+Gui.FormSurcharge..FontName("Tahoma")
+Gui.FormSurcharge..FontSize(8.25)
+Gui.FormSurcharge..ControlBox(True)
+Gui.FormSurcharge..MaxButton(True)
+Gui.FormSurcharge..MinButton(True)
+Gui.FormSurcharge..Moveable(True)
+Gui.FormSurcharge..Sizeable(True)
+Gui.FormSurcharge..ShowInTaskBar(True)
+Gui.FormSurcharge..TitleBar(True)
+Gui.FormSurcharge.cmdSave.Create(Button)
+Gui.FormSurcharge.cmdSave.Size(855,375)
+Gui.FormSurcharge.cmdSave.Position(105,9435)
+Gui.FormSurcharge.cmdSave.Caption("Save")
+Gui.FormSurcharge.cmdSave.Event(Click,cmdSave_Click)
+Gui.FormSurcharge.cmdSave.Enabled(True)
+Gui.FormSurcharge.cmdSave.Visible(True)
+Gui.FormSurcharge.cmdSave.Zorder(0)
+Gui.FormSurcharge.cmdSave.FontName("Tahoma")
+Gui.FormSurcharge.cmdSave.FontSize(8.25)
+Gui.FormSurcharge.tab1.Create(Tab)
+Gui.FormSurcharge.tab1.Size(15090,9315)
+Gui.FormSurcharge.tab1.Position(75,75)
+Gui.FormSurcharge.tab1.Event(Click,tab1_Click)
+Gui.FormSurcharge.tab1.Enabled(True)
+Gui.FormSurcharge.tab1.Visible(True)
+Gui.FormSurcharge.tab1.Zorder(0)
+Gui.FormSurcharge.tab1.FontName("Tahoma")
+Gui.FormSurcharge.tab1.FontSize(8.25)
+Gui.FormSurcharge.tab1.Tabs(2)
+Gui.FormSurcharge.tab1.SetTab(0)
+Gui.FormSurcharge.tab1.Caption("Surcharge Edit")
+Gui.FormSurcharge.tab1.SetTab(1)
+Gui.FormSurcharge.tab1.Caption("Surcharge View")
+Gui.FormSurcharge.lblViewYear.Create(Label,"Enter Year",True,795,210,0,105,120,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSurcharge.lblViewYear.Parent("tab1",1)
+Gui.FormSurcharge.lblViewYear.BorderStyle(0)
+Gui.FormSurcharge.lblEditYear.Create(Label,"Enter Year",True,795,210,0,105,120,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSurcharge.lblEditYear.Parent("tab1",0)
+Gui.FormSurcharge.lblEditYear.BorderStyle(0)
+Gui.FormSurcharge.txtEditYear.Create(TextBox,"",True,1215,300,0,105,330,True,0,"Arial",8,-2147483643,1)
+Gui.FormSurcharge.txtEditYear.Parent("tab1",0)
+Gui.FormSurcharge.txtEditYear.ForeColor(-2147483647)
+Gui.FormSurcharge.lblVendor.Create(Label,"Vendor",True,555,210,0,6510,120,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSurcharge.lblVendor.Parent("tab1",0)
+Gui.FormSurcharge.lblVendor.BorderStyle(0)
+Gui.FormSurcharge.txtVendor.Create(TextBox,"",True,2040,300,0,6510,330,True,0,"Arial",8,-2147483643,1)
+Gui.FormSurcharge.txtVendor.Parent("tab1",0)
+Gui.FormSurcharge.txtVendor.Event(LostFocus,txtVendor_LostFocus)
+Gui.FormSurcharge.txtVendor.ForeColor(-2147483647)
+Gui.FormSurcharge.cmdVendor.Create(Button)
+Gui.FormSurcharge.cmdVendor.Size(390,375)
+Gui.FormSurcharge.cmdVendor.Position(8655,300)
+Gui.FormSurcharge.cmdVendor.Parent("tab1",0)
+Gui.FormSurcharge.cmdVendor.Caption("^")
+Gui.FormSurcharge.cmdVendor.Event(Click,cmdVendor_Click)
+Gui.FormSurcharge.cmdVendor.Enabled(True)
+Gui.FormSurcharge.cmdVendor.Visible(True)
+Gui.FormSurcharge.cmdVendor.Zorder(0)
+Gui.FormSurcharge.cmdVendor.FontName("Tahoma")
+Gui.FormSurcharge.cmdVendor.FontSize(8.25)
+Gui.FormSurcharge.GsGridControlSurchEdit.Create(GsGridControl)
+Gui.FormSurcharge.GsGridControlSurchEdit.Size(14925,8130)
+Gui.FormSurcharge.GsGridControlSurchEdit.Position(0,690)
+Gui.FormSurcharge.GsGridControlSurchEdit.Parent("tab1",0)
+Gui.FormSurcharge.GsGridControlSurchEdit.Event(CellValueChanged,GsGridControlSurchEdit_CellValueChanged)
+Gui.FormSurcharge.GsGridControlSurchEdit.Enabled(True)
+Gui.FormSurcharge.GsGridControlSurchEdit.Visible(True)
+Gui.FormSurcharge.GsGridControlSurchEdit.Zorder(0)
+Gui.FormSurcharge.lblPart.Create(Label,"Part",True,285,210,0,1440,120,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSurcharge.lblPart.Parent("tab1",0)
+Gui.FormSurcharge.lblPart.BorderStyle(0)
+Gui.FormSurcharge.txtSortCode.Create(TextBox,"",True,1545,300,0,4350,330,True,0,"Arial",8,-2147483643,1)
+Gui.FormSurcharge.txtSortCode.Parent("tab1",0)
+Gui.FormSurcharge.txtSortCode.Event(LostFocus,txtPart_LostFocus)
+Gui.FormSurcharge.txtSortCode.ForeColor(-2147483647)
+Gui.FormSurcharge.lblSortCode.Create(Label,"Sort Code",True,720,210,0,4350,120,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSurcharge.lblSortCode.Parent("tab1",0)
+Gui.FormSurcharge.lblSortCode.BorderStyle(0)
+Gui.FormSurcharge.cmdCopyPVYear.Create(Button)
+Gui.FormSurcharge.cmdCopyPVYear.Size(1410,375)
+Gui.FormSurcharge.cmdCopyPVYear.Position(13515,300)
+Gui.FormSurcharge.cmdCopyPVYear.Parent("tab1",0)
+Gui.FormSurcharge.cmdCopyPVYear.Caption("Copy ")
+Gui.FormSurcharge.cmdCopyPVYear.Event(Click,cmdCopyPVYear_Click)
+Gui.FormSurcharge.cmdCopyPVYear.Enabled(True)
+Gui.FormSurcharge.cmdCopyPVYear.Visible(True)
+Gui.FormSurcharge.cmdCopyPVYear.Zorder(0)
+Gui.FormSurcharge.cmdCopyPVYear.FontName("Tahoma")
+Gui.FormSurcharge.cmdCopyPVYear.FontSize(8.25)
+Gui.FormSurcharge.lblLoc.Create(Label,"Loc",True,270,210,0,3720,120,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSurcharge.lblLoc.Parent("tab1",0)
+Gui.FormSurcharge.lblLoc.BorderStyle(0)
+Gui.FormSurcharge.txtPart.Create(TextBox,"",True,2175,300,0,1440,330,True,0,"Arial",8,-2147483643,1)
+Gui.FormSurcharge.txtPart.Parent("tab1",0)
+Gui.FormSurcharge.txtPart.Event(LostFocus,txtPart_LostFocus)
+Gui.FormSurcharge.txtPart.ForeColor(-2147483647)
+Gui.FormSurcharge.txtLoc.Create(TextBox,"",True,525,300,0,3720,330,True,0,"Arial",8,-2147483643,1)
+Gui.FormSurcharge.txtLoc.Parent("tab1",0)
+Gui.FormSurcharge.txtLoc.Event(LostFocus,txtPart_LostFocus)
+Gui.FormSurcharge.txtLoc.ForeColor(-2147483647)
+Gui.FormSurcharge.cmdPartLoc.Create(Button)
+Gui.FormSurcharge.cmdPartLoc.Size(390,375)
+Gui.FormSurcharge.cmdPartLoc.Position(6000,300)
+Gui.FormSurcharge.cmdPartLoc.Parent("tab1",0)
+Gui.FormSurcharge.cmdPartLoc.Caption("^")
+Gui.FormSurcharge.cmdPartLoc.DefaultValue("")
+Gui.FormSurcharge.cmdPartLoc.Event(Click,cmdPartLoc_Click)
+Gui.FormSurcharge.cmdPartLoc.Enabled(True)
+Gui.FormSurcharge.cmdPartLoc.Visible(True)
+Gui.FormSurcharge.cmdPartLoc.Zorder(0)
+Gui.FormSurcharge.cmdPartLoc.FontName("Tahoma")
+Gui.FormSurcharge.cmdPartLoc.FontSize(8.25)
+Gui.FormSurcharge.txtPVYear.Create(TextBox,"",True,1215,300,0,12240,330,True,0,"Arial",8,-2147483643,1)
+Gui.FormSurcharge.txtPVYear.Parent("tab1",0)
+Gui.FormSurcharge.txtPVYear.ForeColor(-2147483647)
+Gui.FormSurcharge.lblPVToYear.Create(Label,"Current Part Vendor To Year",True,2100,210,0,12240,120,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSurcharge.lblPVToYear.Parent("tab1",0)
+Gui.FormSurcharge.lblPVToYear.BorderStyle(0)
+Gui.FormSurcharge.cmdSaveView.Create(Button)
+Gui.FormSurcharge.cmdSaveView.Enabled(True)
+Gui.FormSurcharge.cmdSaveView.Visible(True)
+Gui.FormSurcharge.cmdSaveView.Zorder(0)
+Gui.FormSurcharge.cmdSaveView.Size(1125,345)
+Gui.FormSurcharge.cmdSaveView.Position(13785,285)
+Gui.FormSurcharge.cmdSaveView.Caption("Save Grid")
+Gui.FormSurcharge.cmdSaveView.FontName("Tahoma")
+Gui.FormSurcharge.cmdSaveView.FontSize(8.25)
+Gui.FormSurcharge.cmdSaveView.Parent("tab1",1)
+Gui.FormSurcharge.cmdSaveView.Event(Click,cmdSaveView_Click)
+Gui.FormSurcharge.txtViewYear.Create(TextBox,"",True,1215,300,0,105,330,True,0,"Arial",8,-2147483643,1)
+Gui.FormSurcharge.txtViewYear.NumericOnly(2)
+Gui.FormSurcharge.txtViewYear.Event(LostFocus,txtYear_LostFocus)
+Gui.FormSurcharge.txtViewYear.Event(KeyPressEnter,txtYear_KeyPressEnter)
+Gui.FormSurcharge.txtViewYear.Parent("tab1",1)
+Gui.FormSurcharge.txtViewYear.ForeColor(-2147483647)
+Gui.FormSurcharge.GsGridControlSurcharge.Create(GsGridControl)
+Gui.FormSurcharge.GsGridControlSurcharge.Size(14925,8130)
+Gui.FormSurcharge.GsGridControlSurcharge.Position(0,690)
+Gui.FormSurcharge.GsGridControlSurcharge.Parent("tab1",1)
+Gui.FormSurcharge.GsGridControlSurcharge.Enabled(True)
+Gui.FormSurcharge.GsGridControlSurcharge.Visible(True)
+Gui.FormSurcharge.GsGridControlSurcharge.Zorder(0)
+Gui.FormSurcharge.GsGridControlSurcharge.Event(CellValueChanged,GsGridControlSurcharge_CellValueChanged)
+Gui.FormSurcharge.cmdExport.Create(Button)
+Gui.FormSurcharge.cmdExport.Size(1620,375)
+Gui.FormSurcharge.cmdExport.Position(1515,255)
+Gui.FormSurcharge.cmdExport.Parent("tab1",1)
+Gui.FormSurcharge.cmdExport.Caption("Export")
+Gui.FormSurcharge.cmdExport.Event(Click,cmdExport_Click)
+Gui.FormSurcharge.cmdExport.Enabled(True)
+Gui.FormSurcharge.cmdExport.Visible(True)
+Gui.FormSurcharge.cmdExport.Zorder(0)
+Gui.FormSurcharge.cmdExport.FontName("Tahoma")
+Gui.FormSurcharge.cmdExport.FontSize(8.25)
+Gui.FormSurcharge.cmdRefresh.Create(Button)
+Gui.FormSurcharge.cmdRefresh.Enabled(True)
+Gui.FormSurcharge.cmdRefresh.Visible(True)
+Gui.FormSurcharge.cmdRefresh.Zorder(0)
+Gui.FormSurcharge.cmdRefresh.Size(720,345)
+Gui.FormSurcharge.cmdRefresh.Position(12660,285)
+Gui.FormSurcharge.cmdRefresh.Caption("")
+Gui.FormSurcharge.cmdRefresh.FontName("Tahoma")
+Gui.FormSurcharge.cmdRefresh.FontSize(8.25)
+Gui.FormSurcharge.cmdRefresh.Event(Click,cmdRefresh_Click)
+Gui.FormSurcharge.cmdRefresh.SvgPicture("icon_refresh_color")
+Gui.FormSurcharge.cmdRefresh.Parent("tab1",1)
+Gui.FormSurcharge.cmdRefresh.ImageAlign(8)
+Gui.FormFromYearToYear..Create(BaseForm)
+Gui.FormFromYearToYear..Caption("Surcharge From Year To Year")
+Gui.FormFromYearToYear..Size(5160,1845)
+Gui.FormFromYearToYear..MinX(0)
+Gui.FormFromYearToYear..MinY(0)
+Gui.FormFromYearToYear..Position(0,0)
+Gui.FormFromYearToYear..BackColor(-2147483633)
+Gui.FormFromYearToYear..MousePointer(0)
+Gui.FormFromYearToYear..AlwaysOnTop(False)
+Gui.FormFromYearToYear..FontName("Tahoma")
+Gui.FormFromYearToYear..FontSize(8.25)
+Gui.FormFromYearToYear..ControlBox(True)
+Gui.FormFromYearToYear..MaxButton(True)
+Gui.FormFromYearToYear..MinButton(True)
+Gui.FormFromYearToYear..Moveable(True)
+Gui.FormFromYearToYear..Sizeable(True)
+Gui.FormFromYearToYear..ShowInTaskBar(True)
+Gui.FormFromYearToYear..TitleBar(True)
+Gui.FormFromYearToYear..Event(UnLoad,FormFromYearToYear_UnLoad)
+Gui.FormFromYearToYear.txtFromYear.Create(TextBox,"",True,1215,300,0,120,480,True,0,"Arial",8,-2147483643,1)
+Gui.FormFromYearToYear.lblFromYear.Create(Label,"From Year",True,1740,255,0,135,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormFromYearToYear.lblFromYear.BorderStyle(0)
+Gui.FormFromYearToYear.txtToYear.Create(TextBox,"",True,1215,300,0,2025,480,True,0,"Arial",8,-2147483643,1)
+Gui.FormFromYearToYear.txtToYear.Event(LostFocus,txtToYear_LostFocus)
+Gui.FormFromYearToYear.lblToYear.Create(Label,"To Year",True,1935,255,0,2025,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormFromYearToYear.lblToYear.BorderStyle(0)
+Gui.FormFromYearToYear.cmdSubmit.Create(Button)
+Gui.FormFromYearToYear.cmdSubmit.Size(855,375)
+Gui.FormFromYearToYear.cmdSubmit.Position(120,1005)
+Gui.FormFromYearToYear.cmdSubmit.Caption("Submit")
+Gui.FormFromYearToYear.cmdSubmit.Event(Click,cmdSubmit_Click)
+Gui.FormFromYearToYear.cmdSubmit.Enabled(True)
+Gui.FormFromYearToYear.cmdSubmit.Visible(True)
+Gui.FormFromYearToYear.cmdSubmit.Zorder(0)
+Gui.FormFromYearToYear.cmdSubmit.FontName("Tahoma")
+Gui.FormFromYearToYear.cmdSubmit.FontSize(8.25)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+V.Global.sVendName.Declare(String,"")
+V.Global.bLoadData.Declare(Boolean)
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sYear.Declare(String,"")
+	V.Local.sOther.Declare(String,"")
+	F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+		'PO Reciepts Pre Save Hook
+		F.Intrinsic.Control.Case(15030)
+			'calculating surcharge 
+			'adding the surhcarge to the other amount box on po reiept screen
+			F.Intrinsic.Control.CallSub(Update_OtherAmount)
+			
+		'custom menu items
+		F.Intrinsic.Control.CaseElse
+			'view only for surcharges
+			F.Intrinsic.Control.If(V.Caller.Switches,=,"E")
+				F.Intrinsic.Control.CallSub(Build_Empty_View_DT)
+				
+				F.Intrinsic.Control.CallSub(Set_View_Properties)
+				
+				'Arturo Almaguer 5/26/22=========================
+				F.Intrinsic.Control.CallSub("SetContextMenuView")
+				F.Intrinsic.Control.CallSub("Deserialize")
+				'================================================
+				F.Intrinsic.Control.CallSub(Build_Empty_Edit_DT)
+				
+				F.Intrinsic.Control.CallSub(Set_Edit_Properties)
+				
+				F.Intrinsic.String.Format(V.Ambient.Date,"YYYY",V.Local.sYear)
+				Gui.FormSurcharge.txtEditYear.Text(V.Local.sYear)
+				
+				Gui.FormSurcharge.cmdSave.Enabled(False)
+				
+				Gui.FormSurcharge.tab1.SetTab(0)
+				
+				F.Intrinsic.String.Format(V.Ambient.Date,"YYYY",V.Local.sYear)
+				gui.FormSurcharge.txtViewYear.Text(v.Local.sYear)
+				f.Intrinsic.Control.CallSub(txtYear_KeyPressEnter)
+					
+				Gui.FormSurcharge..Show
+				
+			F.Intrinsic.Control.Else
+				F.Intrinsic.Control.If(V.Caller.Switches,=,"V")
+					'view and edit for surcharges
+					F.Intrinsic.Control.CallSub(Build_Empty_View_DT)
+					F.Intrinsic.Control.CallSub(Set_View_Properties)
+					
+					'Arturo Almaguer 5/26/22=========================
+					F.Intrinsic.Control.CallSub("SetContextMenuView")
+					F.Intrinsic.Control.CallSub("Deserialize")
+					'================================================
+					Gui.FormSurcharge.tab1.TabVisible(0,False)
+				
+					Gui.FormSurcharge.tab1.SetTab(1)
+					
+					F.Intrinsic.String.Format(V.Ambient.Date,"YYYY",V.Local.sYear)
+					gui.FormSurcharge.txtViewYear.Text(v.Local.sYear)
+					f.Intrinsic.Control.CallSub(txtYear_KeyPressEnter)
+					
+					Gui.FormSurcharge..Show
+					
+				F.Intrinsic.Control.Else
+					F.Intrinsic.Control.If(V.Caller.Switches,=,"Y")
+						F.Intrinsic.String.Format(V.Ambient.Date,"YYYY",V.Local.sYear)
+						Gui.FormFromYearToYear.txtFromYear.Text(V.Local.sYear)
+						Gui.FormFromYearToYear.cmdSubmit.Enabled(False)
+						Gui.FormFromYearToYear..Show
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.ErrorMsg.Start
+v.Local.sError.Declare
+
+'Closes ODBC connection, default to connection : "con"
+f.Intrinsic.Control.If(v.ODBC!con.State, =, 1)
+	f.ODBC.Connection!con.Close
+f.Intrinsic.Control.EndIf
+
+'Generic Error message.
+f.Intrinsic.String.Build("Project GCG_5690_Surchage_Maint.g2u {0}{0}Subroutine: {1}{0}Error: {2} with Description: {3}", v.Ambient.NewLine, v.Args.CurrentSub, v.Ambient.ErrorNumber, v.Ambient.ErrorDescription, v.Local.sError)
+f.Intrinsic.UI.Msgbox(v.Local.sError)
+Program.Sub.ErrorMsg.End
+
+Program.Sub.FormSurcharge_UnLoad.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+
+	'Arturo Almaguer 5/26/22=======================================================
+	F.Intrinsic.Control.If(V.Global.bLoadData)
+		F.Intrinsic.Control.CallSub(Serialize)
+	F.Intrinsic.Control.EndIf
+	'==============================================================================
+
+	F.Intrinsic.Control.End
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.FormSurcharge_UnLoad.End
+
+Program.Sub.Build_Empty_View_DT.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sSql.Declare(String,"")
+	
+	'Arturo Almaguer 5/26/22=======================================================
+	F.Intrinsic.Control.If(v.DataTable.Sur.Exists)
+		F.Data.DataTable.Close("Sur")
+	F.Intrinsic.Control.EndIf
+	'==============================================================================
+	
+	'creating empty view datatable
+	V.Local.sSql.Set("Select Surcharge_Year, Part, Location, Sort_Code, Vendor, Name_Vendor, Material_1, Silica_1, Energy_1, Total_1, Material_2, Silica_2, Energy_2, Total_2, Material_3, Silica_3, Energy_3, Total_3, Material_4, Silica_4, Energy_4, Total_4, Material_5, Silica_5, Energy_5, Total_5, Material_6, Silica_6, Energy_6, Total_6, Material_7, Silica_7, Energy_7, Total_7, Material_8, Silica_8, Energy_8, Total_8, Material_9, Silica_9, Energy_9, Total_9, Material_10, Silica_10, Energy_10, Total_10, Material_11, Silica_11, Energy_11, Total_11, Material_12, Silica_12, Energy_12, Total_12, Total From GCG_5690_Surcharge Where Surcharge_Year = '-1'")
+	F.ODBC.Connection!Con.OpenCompanyConnection
+	F.Data.DataTable.CreateFromSQL("Sur","con",V.Local.sSql,True)
+	F.ODBC.Connection!Con.Close
+	
+	'Arturo Almaguer 5/26/22=======================================================
+	F.Data.DataTable.AddColumn("Sur", "SELECT", "Boolean", False)
+	V.Global.bLoadData.Set(True)
+	'==============================================================================
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.Build_Empty_View_DT.End
+
+Program.Sub.Set_View_Properties.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	v.Local.sCol.Declare(String, "")
+	v.Local.iCnt.Declare
+	
+	'attaching view datatable and setting grid properties
+	Gui.FormSurcharge.GsGridControlSurcharge.Anchor(15)
+	Gui.FormSurcharge.cmdSave.Anchor(6)
+	Gui.FormSurcharge.tab1.Anchor(15)
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.AddGridviewFromDatatable("GSur","Sur")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetGridviewProperty("GSur","OptionsViewColumnAutoWidth",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetGridviewProperty("GSur","Enableappearanceoddrow",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetGridviewProperty("GSur","OptionsViewShowAutoFilterRow",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetGridviewProperty("GSur","OptionsFindAlwaysVisible",True)
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Surcharge_Year","Caption","Year")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Surcharge_Year","Visible",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Surcharge_Year","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Surcharge_Year","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Surcharge_Year","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Surcharge_Year","HeaderForeColor","White")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Part","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Part","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Part","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Part","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Part","Width","150")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Part","Fixed","Left")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Location","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Location","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Location","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Location","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Location","Fixed","Left")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Sort_Code","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Sort_Code","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Sort_Code","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Sort_Code","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Sort_Code","Fixed","Left")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Sort_Code","Caption","Sort Code")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Vendor","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Vendor","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Vendor","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Vendor","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Vendor","Fixed","Left")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Name_Vendor","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Name_Vendor","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Name_Vendor","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Name_Vendor","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Name_Vendor","Fixed","Left")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Name_Vendor","Caption","Vendor Name")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_1","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_1","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_1","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_1","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_1","Caption","Jan Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_1","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_1","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_1","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_1","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_1","Caption","Jan Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_1","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_1","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_1","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_1","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_1","Caption","Jan Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_1","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_1","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_1","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_1","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_1","Caption","Jan Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_2","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_2","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_2","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_2","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_2","Caption","Feb Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_2","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_2","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_2","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_2","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_2","Caption","Feb Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_2","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_2","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_2","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_2","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_2","Caption","Feb Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_2","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_2","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_2","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_2","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_2","Caption","Feb Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_3","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_3","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_3","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_3","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_3","Caption","Mar Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_3","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_3","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_3","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_3","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_3","Caption","Mar Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_3","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_3","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_3","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_3","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_3","Caption","Mar Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_3","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_3","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_3","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_3","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_3","Caption","Mar Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_4","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_4","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_4","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_4","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_4","Caption","Apr Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_4","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_4","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_4","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_4","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_4","Caption","Apr Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_4","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_4","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_4","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_4","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_4","Caption","Apr Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_4","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_4","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_4","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_4","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_4","Caption","Apr Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_5","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_5","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_5","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_5","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_5","Caption","May Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_5","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_5","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_5","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_5","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_5","Caption","May Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_5","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_5","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_5","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_5","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_5","Caption","May Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_5","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_5","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_5","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_5","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_5","Caption","May Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_6","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_6","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_6","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_6","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_6","Caption","Jun Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_6","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_6","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_6","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_6","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_6","Caption","Jun Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_6","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_6","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_6","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_6","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_6","Caption","Jun Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_6","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_6","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_6","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_6","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_6","Caption","Jun Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_7","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_7","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_7","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_7","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_7","Caption","Jul Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_7","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_7","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_7","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_7","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_7","Caption","Jul Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_7","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_7","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_7","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_7","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_7","Caption","Jul Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_7","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_7","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_7","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_7","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_7","Caption","Jul Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_8","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_8","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_8","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_8","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_8","Caption","Aug Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_8","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_8","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_8","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_8","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_8","Caption","Aug Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_8","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_8","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_8","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_8","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_8","Caption","Aug Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_8","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_8","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_8","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_8","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_8","Caption","Aug Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_9","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_9","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_9","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_9","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_9","Caption","Sep Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_9","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_9","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_9","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_9","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_9","Caption","Sep Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_9","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_9","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_9","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_9","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_9","Caption","Sep Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_9","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_9","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_9","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_9","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_9","Caption","Sep Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_10","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_10","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_10","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_10","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_10","Caption","Oct Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_10","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_10","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_10","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_10","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_10","Caption","Oct Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_10","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_10","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_10","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_10","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_10","Caption","Oct Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_10","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_10","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_10","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_10","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_10","Caption","Oct Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_11","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_11","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_11","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_11","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_11","Caption","Nov Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_11","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_11","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_11","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_11","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_11","Caption","Nov Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_11","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_11","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_11","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_11","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_11","Caption","Nov Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_11","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_11","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_11","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_11","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_11","Caption","Nov Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_12","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_12","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_12","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_12","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Material_12","Caption","Dec Material")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_12","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_12","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_12","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_12","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Silica_12","Caption","Dec Silica")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_12","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_12","ReadOnly",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_12","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_12","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Energy_12","Caption","Dec Energy")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_12","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_12","ReadOnly",True)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_12","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_12","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total_12","Caption","Dec Total")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total","Visible",False)
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","Total","HeaderForeColor","White")
+	
+	'Arturo Almaguer 5/26/22=======================================================
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","SELECT","AllowEdit",True)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","SELECT","ReadOnly",False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","SELECT", "MaxWidth","80")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","SELECT","Fixed","Left")
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur","SELECT","Caption","Select")
+	'==============================================================================
+	
+	'Making numbers have 4 decimals.
+	f.Intrinsic.Control.For(v.Local.iCnt, 1, 12, 1)
+		f.Intrinsic.String.Build("Material_{0}", v.Local.iCnt, v.Local.sCol)
+		Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur", v.Local.sCol, "DisplayCustomNumeric", "#,###,###,##0.0000")
+		f.Intrinsic.String.Build("Silica_{0}", v.Local.iCnt, v.Local.sCol)
+		Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur", v.Local.sCol, "DisplayCustomNumeric", "#,###,###,##0.0000")
+		f.Intrinsic.String.Build("Energy_{0}", v.Local.iCnt, v.Local.sCol)
+		Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur", v.Local.sCol, "DisplayCustomNumeric", "#,###,###,##0.0000")
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.SetColumnProperty("GSur", "Total", "DisplayCustomNumeric", "#,###,###,##0.0000")
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.MainView("GSur")
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.Set_View_Properties.End
+Program.Sub.txtYear_LostFocus.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sSql.Declare(String,"")
+	V.Local.sYear.Declare(String,"")
+	
+	V.Local.sYear.Set(V.Screen.FormSurcharge!txtViewYear.Text)
+	'populating view datatable
+	
+	'Arturo Almaguer 5/26/22=================================================
+	'Added RTRIMs to get rid of blank spaces
+	F.Intrinsic.String.Build("Select Surcharge_Year, RTRIM(Part) Part, RTRIM(Location) Location, RTRIM(Sort_Code) Sort_Code, RTRIM(Vendor) Vendor, RTRIM(Name_Vendor) Name_Vendor, Material_1, Silica_1, Energy_1, Total_1, Material_2, Silica_2, Energy_2, Total_2, Material_3, Silica_3, Energy_3, Total_3, Material_4, Silica_4, Energy_4, Total_4, Material_5, Silica_5, Energy_5, Total_5, Material_6, Silica_6, Energy_6, Total_6, Material_7, Silica_7, Energy_7, Total_7, Material_8, Silica_8, Energy_8, Total_8, Material_9, Silica_9, Energy_9, Total_9, Material_10, Silica_10, Energy_10, Total_10, Material_11, Silica_11, Energy_11, Total_11, Material_12, Silica_12, Energy_12, Total_12, Total From GCG_5690_Surcharge Where Surcharge_Year = '{0}'",V.Local.sYear.Trim,V.Local.sSql)
+	
+	F.Data.DataTable.DeleteRow("Sur")
+	F.Data.DataTable.AcceptChanges("Sur")
+	
+	F.ODBC.Connection!con.OpenCompanyConnection
+	F.Data.DataTable.CreateFromSQL("Temp","con",V.Local.sSql,True)
+
+	
+	F.Data.DataTable.Merge("Temp","Sur",False,4)
+	F.Data.DataTable.Close("Temp")
+	'Bryan Pham - VT 11/1/2021
+	
+	f.Data.Dictionary.CreateFromSQL("dVendor","con","Select Vendor, RTRIM(NAME_VENDOR) from V_VENDOR_MASTER")
+	f.Data.Dictionary.SetDefaultReturn("dVendor","")
+	f.Data.Datatable.FillFromDictionary("Sur","dVendor","Vendor","Name_Vendor")
+	f.Data.Dictionary.Close("dVendor")
+	'=======================
+	F.ODBC.Connection!Con.Close
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.txtYear_LostFocus.End
+
+Program.Sub.txtYear_KeyPressEnter.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	'calling sub to populate view datatable
+	F.Intrinsic.Control.CallSub(txtYear_LostFocus)
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.txtYear_KeyPressEnter.End
+
+Program.Sub.GsGridControlSurchEdit_CellValueChanged.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.fMat.Declare(Float,0)
+	V.Local.fSil.Declare(Float,0)
+	V.Local.fEng.Declare(Float,0)
+	V.Local.fTot.Declare(Float,0)
+	V.Local.sCol.Declare(String,"")
+	
+	Gui.FormSurcharge.cmdSave.Enabled(True)
+	'calculating total for selected month on the grid
+	Gui.FormSurcharge.GsGridControlSurchEdit.GetCellValueByColumnName("GSurShow","Material",V.Args.RowIndex,V.Local.fMat)
+	Gui.FormSurcharge.GsGridControlSurchEdit.GetCellValueByColumnName("GSurShow","Silica",V.Args.RowIndex,V.Local.fSil)
+	Gui.FormSurcharge.GsGridControlSurchEdit.GetCellValueByColumnName("GSurShow","Energy",V.Args.RowIndex,V.Local.fEng)
+	
+	F.Intrinsic.Math.Add(V.Local.fMat,V.Local.fEng,V.Local.fSil,V.Local.fTot)
+	
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetCellValueByColumnName("GSurShow","Total",V.Args.RowIndex,V.Local.fTot)
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.GsGridControlSurchEdit_CellValueChanged.End
+
+Program.Sub.tab1_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	
+	'hiding or unhiding save depending on which tab is selected.
+	F.Intrinsic.Control.If(V.Screen.FormSurcharge!tab1.Tab,=,0)
+		Gui.FormSurcharge.cmdSave.Visible(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSurcharge.cmdSave.Visible(False)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.tab1_Click.End
+
+Program.Sub.cmdPartLoc_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sTitles.Declare(String,"")
+	V.Local.sWidths.Declare(String,"")
+	V.Local.sRet.Declare(String,"")
+	V.Local.sSql.Declare(String,"")
+	
+	'part locationg browser.
+	V.Local.sSql.Set("Select A.Part, A.Location, A.Code_Sort, B.Name_Vendor as Vendor, C.Name_Vendor From V_Inventory_Mstr A Inner Join V_Inventory_Mst2 B on A.Part+A.Location = B.Part+B.Location Inner Join V_Vendor_Master C on B.Name_vendor = C.Vendor Where A.Code_Sort <> '' Order by A.Part, A.Location, A.Code_Sort;") 
+	V.Local.sTitles.Set("Part*!*Location*!*Sort Code*!*Vendor*!*Vendor Name")
+	V.Local.sWidths.Set("1800*!*800*!*800*!*800*!*800")
+	
+	F.Intrinsic.String.Split(V.Local.sTitles,"*!*",V.Local.sTitles)
+	F.Intrinsic.String.Split(V.Local.sWidths,"*!*",V.Local.sWidths)
+	
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+	
+	F.ODBC.Connection!Con.OpenCompanyConnection
+	F.Intrinsic.UI.Browser("Select Part","con",V.Local.sSql,V.Local.sTitles,V.Local.sWidths,10200,9000,V.Local.sRet)
+	F.ODBC.Connection!Con.Close
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		Gui.FormSurcharge.txtVendor.Text("")
+		Gui.FormSurcharge.txtPart.Text(V.Local.sRet(0).Trim)
+		Gui.FormSurcharge.txtLoc.Text(V.Local.sRet(1).Trim)
+		Gui.FormSurcharge.txtSortCode.Text(V.Local.sRet(2).Trim)
+		gui.FormSurcharge.txtVendor.Text(v.Local.sRet(3).Trim)
+		V.Global.sVendName.Set("")
+		
+		F.Intrinsic.Control.BlockEvents
+		'Gui.FormSurcharge.txtVendor.Text("")
+		F.Intrinsic.Control.UnBlockEvents
+		Gui.FormSurcharge.txtVendor.SetFocus
+		f.Intrinsic.Control.CallSub(txtVendor_LostFocus)
+	F.Intrinsic.Control.EndIf
+			
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.cmdPartLoc_Click.End
+
+Program.Sub.txtPart_LostFocus.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	
+	V.Global.sVendName.Set("")
+	
+	'making save edit grid not modifiable until a vendor is selected for the selected part.
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","ReadOnly",True)
+	
+	F.Intrinsic.Control.If(Variable.args.controlname.UCase,=,"TXTPART")
+		F.Intrinsic.Control.BlockEvents
+		'clearing out a loc and vendor
+		Gui.FormSurcharge.txtVendor.Text("")
+		Gui.FormSurcharge.txtLoc.Text("")
+		Gui.FormSurcharge.txtSortCode.Text("")
+		GUi.FormSurcharge.txtLoc.SetFocus
+		F.Intrinsic.Control.UnBlockEvents
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.If(Variable.args.controlname.UCase,=,"TXTLOC")
+			F.Intrinsic.Control.BlockEvents
+			'clearing out a loc and vendor
+			Gui.FormSurcharge.txtVendor.Text("")
+			Gui.FormSurcharge.txtSortCode.Text("")
+			GUi.FormSurcharge.txtSortCode.SetFocus
+			F.Intrinsic.Control.UnBlockEvents
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.BlockEvents
+			'clearing out vendor after a part and loc is selected
+			Gui.FormSurcharge.txtVendor.Text("")
+			GUi.FormSurcharge.txtVendor.SetFocus
+			F.Intrinsic.Control.UnBlockEvents
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.txtPart_LostFocus.End
+
+Program.Sub.txtVendor_LostFocus.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.bVend.Declare(Boolean,False)
+	V.Local.sSql.Declare(String,"")
+	V.Local.i.Declare(Long,0)
+	V.Local.iM.Declare(Long,0)
+	V.Local.sMat.Declare(String,"")
+	V.Local.sSil.Declare(String,"")
+	V.Local.sEng.Declare(String,"")
+	V.Local.sTot.Declare(String,"")
+	
+	'if part and vendor not blank make the edit grid editable
+	F.Intrinsic.Control.If(V.Screen.FormSurcharge!txtPart.Text,<>,"")
+		F.Intrinsic.Control.If(V.Screen.FormSurcharge!txtVendor.Text,<>,"")
+			V.Local.bVend.Set(True)
+			Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","AllowEdit",True)
+			Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","ReadOnly",False)
+			Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","AllowEdit",True)
+			Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","ReadOnly",False)
+			Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","AllowEdit",True)
+			Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","ReadOnly",False)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.Local.bVend)	
+		'getting part loc vendor year from custom table
+		F.Intrinsic.String.Build("Select Surcharge_Year, Part, Location, Sort_Code, Vendor, Name_Vendor, Material_1, Silica_1, Energy_1, Total_1, Material_2, Silica_2, Energy_2, Total_2, Material_3, Silica_3, Energy_3, Total_3, Material_4, Silica_4, Energy_4, Total_4, Material_5, Silica_5, Energy_5, Total_5, Material_6, Silica_6, Energy_6, Total_6, Material_7, Silica_7, Energy_7, Total_7, Material_8, Silica_8, Energy_8, Total_8, Material_9, Silica_9, Energy_9, Total_9, Material_10, Silica_10, Energy_10, Total_10, Material_11, Silica_11, Energy_11, Total_11, Material_12, Silica_12, Energy_12, Total_12, Total From GCG_5690_Surcharge Where Surcharge_Year = '{0}' and Part = '{1}' and Location = '{2}' and Vendor = '{3}' and Sort_Code = '{4}'",V.Screen.FormSurcharge!txtEditYear.Text,V.Screen.FormSurcharge!txtPart.Text,V.Screen.FormSurcharge!txtLoc.Text,V.Screen.FormSurcharge!txtVendor.Text,V.Screen.FormSurcharge!txtSortCode.Text,V.Local.sSql)
+		F.ODBC.Connection!Con.OpenCompanyConnection
+		F.Data.DataTable.CreateFromSQL("Temp","con",v.Local.sSql)
+		F.ODBC.Connection!Con.Close
+		F.Data.DataTable.DeleteRow("SaveSur")
+		F.Data.DataTable.AcceptChanges("SaveSur")
+		F.Data.DataTable.Merge("Temp","SaveSur",False,4)
+		F.Data.DataTable.SetValue("SurShow", -1, "Material",0.0000,"Silica",0.0000,"Energy",0.0000,"Total",0.0000)
+		
+		F.Intrinsic.Control.If(V.DataTable.Temp.RowCount--,<>,-1)
+			F.Intrinsic.Control.For(V.Local.i,0,V.DataTable.SurShow.RowCount--,1)
+				F.Intrinsic.Math.Add(V.Local.i,1,V.Local.iM)
+				F.Intrinsic.String.Build("Material_{0}",V.Local.iM,V.Local.sMat)
+				F.Intrinsic.String.Build("Silica_{0}",V.Local.iM,V.Local.sSil)
+				F.Intrinsic.String.Build("Energy_{0}",V.Local.iM,V.Local.sEng)
+				F.Intrinsic.String.Build("Total_{0}",V.Local.iM,V.Local.sTot)
+				F.Data.DataTable.SetValue("SurShow",V.Local.i,"Material",V.DataTable.Temp(V.DataTable.Temp.RowCount--).[V.Local.sMat]!FieldValFloat,"Silica",V.DataTable.Temp(V.DataTable.Temp.RowCount--).[V.Local.sSil]!FieldValFloat,"Energy",V.DataTable.Temp(V.DataTable.Temp.RowCount--).[V.Local.sEng]!FieldValFloat,"Total",V.DataTable.Temp(V.DataTable.Temp.RowCount--).[V.Local.sTot]!FieldValFloat)
+			F.Intrinsic.Control.Next(V.Local.i)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.Close("Temp")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.txtVendor_LostFocus.End
+
+Program.Sub.cmdVendor_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sTitles.Declare(String,"")
+	V.Local.sWidths.Declare(String,"")
+	V.Local.sRet.Declare(String,"")
+	V.Local.sSql.Declare(String,"")
+	
+	'vendor broswer
+	V.Local.sSql.Set("Select Vendor, Name_Vendor From V_Vendor_Master Order by Vendor") 
+	V.Local.sTitles.Set("Vendor*!*Name")
+	V.Local.sWidths.Set("1800*!*800")
+	
+	F.Intrinsic.String.Split(V.Local.sTitles,"*!*",V.Local.sTitles)
+	F.Intrinsic.String.Split(V.Local.sWidths,"*!*",V.Local.sWidths)
+	
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+	
+	F.ODBC.Connection!Con.OpenCompanyConnection
+	F.Intrinsic.UI.Browser("Select Vendor","con",V.Local.sSql,V.Local.sTitles,V.Local.sWidths,10200,9000,V.Local.sRet)
+	F.ODBC.Connection!Con.Close
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		
+		Gui.FormSurcharge.txtVendor.Text(V.Local.sRet(0).Trim)
+		V.Global.sVendName.Set(V.Local.sRet(1).Trim)
+
+		F.Intrinsic.Control.CallSub(txtVendor_LostFocus)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.cmdVendor_Click.End
+
+Program.Sub.Build_Empty_Edit_DT.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sSql.Declare(String,"")
+	V.Local.i.Declare(Long,0)
+	V.Local.sMonth.Declare(String,"January*!*February*!*March*!*April*!*May*!*June*!*July*!*August*!*September*!*October*!*November*!*December")
+	
+	'creating empty edit datatable
+	F.Intrinsic.String.Split(V.Local.sMonth,"*!*",V.Local.sMonth)
+	
+	V.Local.sSql.Set("Select Surcharge_Year, Part, Location, Sort_Code, Vendor, Name_Vendor, Material_1, Silica_1, Energy_1, Total_1, Material_2, Silica_2, Energy_2, Total_2, Material_3, Silica_3, Energy_3, Total_3, Material_4, Silica_4, Energy_4, Total_4, Material_5, Silica_5, Energy_5, Total_5, Material_6, Silica_6, Energy_6, Total_6, Material_7, Silica_7, Energy_7, Total_7, Material_8, Silica_8, Energy_8, Total_8, Material_9, Silica_9, Energy_9, Total_9, Material_10, Silica_10, Energy_10, Total_10, Material_11, Silica_11, Energy_11, Total_11, Material_12, Silica_12, Energy_12, Total_12, Total From GCG_5690_Surcharge Where Surcharge_Year = '-1'")
+	F.ODBC.Connection!Con.OpenCompanyConnection
+	F.Data.DataTable.CreateFromSQL("SaveSur","con",V.Local.sSql,True)
+	
+
+	F.Data.DataTable.Create("SurShow",True)
+	F.Data.DataTable.AddColumn("SurShow","Month",String)
+	F.Data.DataTable.AddColumn("SurShow","Material",Float)
+	F.Data.DataTable.AddColumn("SurShow","Silica",Float)
+	F.Data.DataTable.AddColumn("SurShow","Energy",Float)
+	F.Data.DataTable.AddColumn("SurShow","Total",Float)
+	
+	
+	
+	F.Data.DataTable.AddExpressionColumn("SurShow","GrandTotal",Float,"Sum(Total)")
+
+	F.Intrinsic.Control.For(V.Local.i,0,V.Local.sMonth.UBound,1)
+		F.Data.DataTable.AddRow("SurShow","Month",V.Local.sMonth(V.Local.i).Trim,"Material",0.0000,"Silica",0.0000,"Energy",0.0000,"Total",0.0000)
+	F.Intrinsic.Control.Next(V.Local.i)
+	
+	f.Data.Dictionary.CreateFromSQL("dVendor","con","Select Vendor, RTRIM(NAME_VENDOR) from V_VENDOR_MASTER")
+	f.Data.Dictionary.SetDefaultReturn("dVendor","")
+	f.Data.Datatable.FillFromDictionary("SaveSur","dVendor","Vendor","Name_Vendor")
+	f.Data.Dictionary.Close("dVendor")
+	F.ODBC.Connection!Con.Close
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.Build_Empty_Edit_DT.End
+
+Program.Sub.Set_Edit_Properties.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	
+	'setting properties for edit datatable
+	Gui.FormSurcharge.GsGridControlSurchEdit.Anchor(15)
+	Gui.FormSurcharge.cmdSave.Anchor(6)
+	Gui.FormSurcharge.tab1.Anchor(15)
+	
+	Gui.FormSurcharge.GsGridControlSurchEdit.AddGridviewFromDatatable("GSurShow","SurShow")
+	
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Month","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Month","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Month","AllowSort",False)
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Month","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Month","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Month","Fixed",Left)
+	
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","AllowSort",False)
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","DisplayCustomNumeric","#,###,###,##0.0000")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Material","HeaderHAlignment","Far")
+	
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","AllowSort",False)
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","DisplayCustomNumeric","#,###,###,##0.0000")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Silica","HeaderHAlignment","Far")
+	
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","AllowSort",False)
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","DisplayCustomNumeric","#,###,###,##0.0000")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Energy","HeaderHAlignment","Far")
+	
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Total","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Total","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Total","AllowSort",False)
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Total","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Total","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Total","DisplayCustomNumeric","#,###,###,##0.0000")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","Total","HeaderHAlignment","Far")
+	
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","GrandTotal","Visible",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","GrandTotal","AllowEdit",False)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","GrandTotal","ReadOnly",True)
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","GrandTotal","AllowSort",False)
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","GrandTotal","HeaderBackColor","Green")
+'	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","GrandTotal","HeaderForeColor","White")
+	Gui.FormSurcharge.GsGridControlSurchEdit.SetColumnProperty("GSurShow","GrandTotal","DisplayCustomNumeric","#,###,###,##0.0000")
+	
+'	Gui.FormSurcharge.GsGridControlSurchEdit.AddSummaryItem("GSurShow","Total","Total","Sum","Year Total: ","","n")
+
+	Gui.FormSurcharge.GsGridControlSurchEdit.MainView("GSurShow")
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.Set_Edit_Properties.End
+
+Program.Sub.cmdSave_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sMat.Declare(String,"")
+	V.Local.sSil.Declare(String,"")
+	V.Local.sEng.Declare(String,"")
+	V.Local.i.Declare(Long,0)
+	V.Local.iIndex.Declare(Long,0)
+	V.Local.sTot.Declare(String,"")
+	
+	'saving surcharge data
+	F.Intrinsic.Control.For(V.Local.i,1,V.DataTable.SurShow.RowCount,1)
+		F.Intrinsic.Math.Sub(V.Local.i,1,V.Local.iIndex)
+		F.Intrinsic.String.Build("Material_{0}",V.Local.i,V.Local.sMat)
+		F.Intrinsic.String.Build("Silica_{0}",V.Local.i,V.Local.sSil)
+		F.Intrinsic.String.Build("Energy_{0}",V.Local.i,V.Local.sEng)
+		F.Intrinsic.String.Build("Total_{0}",V.Local.i,V.Local.sTot)
+		
+		F.Intrinsic.Control.If(V.DataTable.SaveSur.RowCount--,=,-1)
+			F.Data.DataTable.AddRow("SaveSur","Surcharge_Year",V.Screen.FormSurcharge!txtEditYear.Text,"Part",V.Screen.FormSurcharge!txtPart.Text,"Location",V.Screen.FormSurcharge!txtLoc.Text,"Sort_Code",V.Screen.FormSurcharge!txtSortCode.Text,"Vendor",V.Screen.FormSurcharge!txtVendor.Text,"Name_Vendor",V.Global.sVendName.Trim,V.Local.sMat,V.DataTable.SurShow(V.Local.iIndex).Material!FieldValFloat,V.Local.sSil,V.DataTable.SurShow(V.Local.iIndex).Silica!FieldValFloat,V.Local.sEng,V.DataTable.SurShow(V.Local.iIndex).Energy!FieldValFloat,V.Local.sTot,V.DataTable.SurShow(V.Local.iIndex).Total!FieldValFloat)
+		F.Intrinsic.Control.Else
+			F.Data.DataTable.SetValue("SaveSur",V.DataTable.SaveSur.RowCount--,V.Local.sMat,V.DataTable.SurShow(V.Local.iIndex).Material!FieldValFloat,V.Local.sSil,V.DataTable.SurShow(V.Local.iIndex).Silica!FieldValFloat,V.Local.sEng,V.DataTable.SurShow(V.Local.iIndex).Energy!FieldValFloat,V.Local.sTot,V.DataTable.SurShow(V.Local.iIndex).Total!FieldValFloat)
+			F.Intrinsic.Control.If(V.Local.i,=,V.DataTable.SurShow.RowCount)
+				F.Data.DataTable.SetValue("SaveSur",V.DataTable.SaveSur.RowCount--,"Total",V.DataTable.SurShow(V.DataTable.SurShow.RowCount--).GrandTotal!FieldValFloat)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.i)
+	
+	F.Intrinsic.Control.If(V.DataTable.SaveSur.RowCount--,<>,-1)
+		F.ODBC.Connection!Con.OpenCompanyConnection
+		F.Data.DataTable.SaveToDB("SaveSur","con","GCG_5690_Surcharge","Surcharge_Year*!*Part*!*Location*!*Vendor",3)
+		F.ODBC.Connection!Con.Close
+	F.Intrinsic.Control.EndIf
+	
+	Gui.FormSurcharge.cmdSave.Enabled(False)
+	
+	F.Data.DataTable.DeleteRow("SaveSur")
+	F.Data.DataTable.AcceptChanges("SaveSur")
+	
+	F.Intrinsic.Control.ExitSub
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.Update_OtherAmount.Start
+F.Intrinsic.Control.Try
+
+	V.Local.sError.Declare(String,"")
+	V.Local.sSur.Declare(String,"")
+	V.Local.sSql.Declare(String,"")
+	V.Local.sMonth.Declare(String,"")
+	V.Local.sYear.Declare(String,"")
+	V.Local.sRow.Declare(String,"")
+	V.Local.sTot.Declare(String,"")
+	V.Local.i.Declare(Long,0)
+	V.Local.sWieght.Declare(String,"")
+	
+	'000004 = Vendor Number
+	'000139 inv qty
+	'000145 other amount
+	'srow(0) = part
+	'srow(3) = location
+	'srow(14) received qty
+	
+	F.Intrinsic.BDF.Load("AUX001","AUX001")
+'	F.Intrinsic.BDF.Clone("AUX001","CLONE")
+	F.Intrinsic.Math.Sub(V.Passed.GRID-RECEIPT-ROW-SEL.Long,1,V.Local.i)
+	F.Intrinsic.BDF.ReadRow("AUX001",V.Local.i,V.Local.sRow)
+		
+	F.Intrinsic.String.Split(V.Local.sRow,"|~|",V.Local.sRow)
+		
+	F.Intrinsic.String.Format(V.Ambient.Date,"YYYY",V.Local.sYear)
+	F.Intrinsic.String.Format(V.Ambient.Date,"M",V.Local.sMonth)
+	
+	F.Intrinsic.String.Build("Select Total_{0} From GCG_5690_Surcharge Where Surcharge_Year = '{1}' and Part = '{2}' and Location = '{3}' and Vendor = '{4}'",V.Local.sMonth.Long,V.Local.sYear,V.Local.sRow(1).Trim,V.Local.sRow(3).Trim,V.Passed.000004,V.Local.sSql)
+		
+	F.ODBC.Connection!Con.OpenCompanyConnection
+	F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSql,V.Local.sTot)
+	
+	F.Intrinsic.String.Build("Select LBS From V_Inventory_Mst2 Where Part = '{0}' and Location = '{1}'",V.Local.sRow(1).Trim,V.Local.sRow(3).Trim,V.Local.sSql)
+	F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSql,V.Local.sWieght)
+	F.ODBC.Connection!Con.Close
+
+	F.Intrinsic.Control.If(V.Passed.000139.Float,>,0)
+		F.Intrinsic.Control.If(V.Local.sWieght.Float,=,0)
+			V.Local.sWieght.Set("1")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Math.Mult(V.Passed.000139.Float,V.Local.sWieght.Float,V.Local.sWieght.Float)
+		F.Intrinsic.Math.Mult(V.Local.sWieght.Float,V.Local.sTot.Float,V.Local.sTot.Float)
+		V.Passed.000145.Set(V.Local.sTot.Float)
+	F.Intrinsic.Control.Else
+		V.Passed.000145.Set("")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.ExitSub
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.Update_OtherAmount.End
+
+Program.Sub.cmdCopyPVYear_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sMat.Declare(String,"")
+	V.Local.sSil.Declare(String,"")
+	V.Local.sEng.Declare(String,"")
+	V.Local.i.Declare(Long,0)
+	V.Local.iIndex.Declare(Long,0)
+	V.Local.sTot.Declare(String,"")
+	
+	F.Intrinsic.Control.If(V.Screen.FormSurcharge!txtPVYear.Text,<>,"")
+		'saving surcharge data
+		F.Intrinsic.Control.For(V.Local.i,1,V.DataTable.SurShow.RowCount,1)
+			F.Intrinsic.Math.Sub(V.Local.i,1,V.Local.iIndex)
+			F.Intrinsic.String.Build("Material_{0}",V.Local.i,V.Local.sMat)
+			F.Intrinsic.String.Build("Silica_{0}",V.Local.i,V.Local.sSil)
+			F.Intrinsic.String.Build("Energy_{0}",V.Local.i,V.Local.sEng)
+			F.Intrinsic.String.Build("Total_{0}",V.Local.i,V.Local.sTot)
+			
+			F.Intrinsic.Control.If(V.DataTable.SaveSur.RowCount--,=,-1)
+				F.Data.DataTable.AddRow("SaveSur","Surcharge_Year",V.Screen.FormSurcharge!txtPVYear.Text,"Part",V.Screen.FormSurcharge!txtPart.Text,"Location",V.Screen.FormSurcharge!txtLoc.Text,"Sort_Code",V.Screen.FormSurcharge!txtSortCode.Text,"Vendor",V.Screen.FormSurcharge!txtVendor.Text,"Name_Vendor",V.Global.sVendName.Trim,V.Local.sMat,V.DataTable.SurShow(V.Local.iIndex).Material!FieldValFloat,V.Local.sSil,V.DataTable.SurShow(V.Local.iIndex).Silica!FieldValFloat,V.Local.sEng,V.DataTable.SurShow(V.Local.iIndex).Energy!FieldValFloat,V.Local.sTot,V.DataTable.SurShow(V.Local.iIndex).Total!FieldValFloat)
+			F.Intrinsic.Control.Else
+				F.Data.DataTable.SetValue("SaveSur",V.DataTable.SaveSur.RowCount--,V.Local.sMat,V.DataTable.SurShow(V.Local.iIndex).Material!FieldValFloat,V.Local.sSil,V.DataTable.SurShow(V.Local.iIndex).Silica!FieldValFloat,V.Local.sEng,V.DataTable.SurShow(V.Local.iIndex).Energy!FieldValFloat,V.Local.sTot,V.DataTable.SurShow(V.Local.iIndex).Total!FieldValFloat)
+				F.Intrinsic.Control.If(V.Local.i,=,V.DataTable.SurShow.RowCount)
+					F.Data.DataTable.SetValue("SaveSur",V.DataTable.SaveSur.RowCount--,"Total",V.DataTable.SurShow(V.DataTable.SurShow.RowCount--).GrandTotal!FieldValFloat)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.i)
+		
+		F.Intrinsic.Control.If(V.DataTable.SaveSur.RowCount--,<>,-1)
+			F.ODBC.Connection!Con.OpenCompanyConnection
+			F.Data.DataTable.SaveToDB("SaveSur","con","GCG_5690_Surcharge","Surcharge_Year*!*Part*!*Location*!*Vendor",3)
+			F.Intrinsic.UI.Msgbox("Current Part Vendor has been copied to entered year.")
+			F.ODBC.Connection!Con.Close
+		F.Intrinsic.Control.EndIf
+		
+		F.Data.DataTable.DeleteRow("SaveSur")
+		F.Data.DataTable.AcceptChanges("SaveSur")
+	
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.ExitSub
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.cmdCopyPVYear_Click.End
+Program.Sub.cmdSubmit_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.sSql.Declare(String,"")
+	
+	Gui.FormFromYearToYear..Visible(False)
+	
+	F.Intrinsic.String.Build("Select Surcharge_Year, Part, Location, Sort_Code, Vendor, Name_Vendor, Material_1, Silica_1, Energy_1, Total_1, Material_2, Silica_2, Energy_2, Total_2, Material_3, Silica_3, Energy_3, Total_3, Material_4, Silica_4, Energy_4, Total_4, Material_5, Silica_5, Energy_5, Total_5, Material_6, Silica_6, Energy_6, Total_6, Material_7, Silica_7, Energy_7, Total_7, Material_8, Silica_8, Energy_8, Total_8, Material_9, Silica_9, Energy_9, Total_9, Material_10, Silica_10, Energy_10, Total_10, Material_11, Silica_11, Energy_11, Total_11, Material_12, Silica_12, Energy_12, Total_12, Total From GCG_5690_Surcharge Where Surcharge_Year = '{0}'",V.Screen.FormFromYearToYear!txtFromYear.Text,V.Local.sSql)
+	
+	F.ODBC.Connection!Con.OpenCompanyConnection
+	F.Data.DataTable.CreateFromSQL("SurChargeSave","con",V.Local.sSql,True)
+	F.Data.DataTable.SetValue("SurChargeSave",-1,"Surcharge_Year",V.Screen.FormFromYearToYear!txtToYear.Text)
+	'=========================Bryan Pham - VT 11/1/2021============================
+	f.Data.Datatable.SetValue("SurChargeSave",-1,"Material_1",0, "Silica_1",0, "Energy_1", 0,"Total_1",0, "Material_2",0, "Silica_2",0, "Energy_2",0, "Total_2",0, "Material_3",0, "Silica_3",0, "Energy_3",0, "Total_3",0, "Material_4",0, "Silica_4",0, "Energy_4",0, "Total_4",0, "Material_5",0, "Silica_5",0, "Energy_5",0, "Total_5",0, "Material_6",0, "Silica_6",0, "Energy_6",0, "Total_6",0,"Material_7" ,0, "Silica_7",0, "Energy_7",0, "Total_7",0, "Material_8",0, "Silica_8", 0,"Energy_8",0, "Total_8",0, "Material_9",0, "Silica_9",0, "Energy_9", 0,"Total_9", 0,"Material_10",0, "Silica_10",0, "Energy_10",0, "Total_10",0, "Material_11",0, "Silica_11",0, "Energy_11", 0,"Total_11",0, "Material_12",0,"Silica_12" ,0, "Energy_12",0, "Total_12",0, "Total",0)
+	
+	f.Data.Dictionary.CreateFromSQL("dVendor","con","Select Vendor, RTRIM(NAME_VENDOR) from V_VENDOR_MASTER")
+	f.Data.Dictionary.SetDefaultReturn("dVendor","")
+	f.Data.Datatable.FillFromDictionary("SurChargeSave","dVendor","Vendor","Name_Vendor")
+	f.Data.Dictionary.Close("dVendor")
+	'==============================================================================
+	
+	F.Data.DataTable.SaveToDB("SurChargeSave","con","GCG_5690_Surcharge","Surcharge_Year*!*Part*!*Location*!*Vendor",3)
+	F.ODBC.Connection!Con.Close
+	
+	F.Intrinsic.Control.End
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.cmdSubmit_Click.End
+
+Program.Sub.txtToYear_LostFocus.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	
+	F.Intrinsic.Control.If(V.Screen.FormFromYearToYear!txtToYear.Text,<>,"")
+		Gui.FormFromYearToYear.cmdSubmit.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormFromYearToYear.cmdSubmit.Enabled(False)
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.ExitSub
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.txtToYear_LostFocus.End
+
+Program.Sub.cmdExport_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.bRet.Declare(Boolean,False)
+	V.Local.sFile.Declare(String,"")
+	V.Local.sTime.Declare(String,"")
+	V.Local.sDate.Declare(String,"")
+	
+	F.Intrinsic.String.Format(V.Ambient.Date,"MMDDYY",V.Local.sDate)
+	F.Intrinsic.String.Format(V.Ambient.Time,"HnNn",V.Local.sTime)
+	
+	F.Intrinsic.String.Build("{0}\SurchargeExport{1}{2}",V.Caller.TempDir,V.Local.sDate,V.Local.sTime,V.Local.sFile)	
+	
+	F.Automation.MSExcel.CheckPresence(V.Local.bRet)
+	F.Intrinsic.Control.If(V.Local.bRet)
+		F.Intrinsic.String.Build("{0}.xlsx",V.Local.sFile,V.Local.sFile)
+		Gui.FormSurcharge.GsGridControlSurcharge.Export(V.Local.sFile,"xlsx")
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.Try
+			F.Intrinsic.String.Build("{0}.csv",V.Local.sFile,V.Local.sFile)
+			Gui.FormSurcharge.GsGridControlSurcharge.Export(V.Local.sFile,"csv")
+		F.Intrinsic.Control.Catch
+			F.Intrinsic.UI.Msgbox("Microsoft Excel or OpenOffice needs to be installed to export the grid....")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndTry
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Task.ShellExec(0,"",V.Local.sFile,"","",1)
+	
+	F.Intrinsic.Control.ExitSub
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.cmdExport_Click.End
+
+Program.Sub.FormFromYearToYear_UnLoad.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	
+	F.Intrinsic.Control.End
+	
+	F.Intrinsic.Control.ExitSub
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.FormFromYearToYear_UnLoad.End
+
+Program.Sub.cmdSaveView_Click.Start
+f.Intrinsic.Control.Try
+	'Accept Changes
+	f.Data.DataTable.AcceptChanges("Sur")
+	
+	'Arturo Almaguer 5/26/22=================================================
+	'Creating new dv, then new dt, then remove SELECT column then save to custom table.
+	F.Data.DataView.Create("Sur", "dvSur", 22, "","")
+	F.Data.DataView.ToDataTable("Sur", "dvSur", "SurFinal")
+	F.Data.DataView.Close("Sur", "dvSur")
+	F.Data.DataTable.RemoveColumn("SurFinal", "SELECT")
+	f.Data.DataTable.AcceptChanges("SurFinal")
+	'========================================================================
+	
+	'Save DT
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Data.DataTable.SaveToDB("SurFinal", "con", "GCG_5690_Surcharge", "Surcharge_Year*!*Part*!*Location*!*Vendor", 256)
+	f.ODBC.Connection!con.Close
+	
+	'Closing SurFinal dt
+	F.Data.DataTable.Close("SurFinal")
+	
+	'Displaying message to the user 
+	F.Intrinsic.UI.Msgbox("All changes have been saved.", "SUCCESS")
+	
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdSaveView_Click.End
+
+Program.Sub.GsGridControlSurcharge_CellValueChanged.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare(String,"")
+	V.Local.fMat.Declare(Float,0)
+	V.Local.fSil.Declare(Float,0)
+	V.Local.fEng.Declare(Float,0)
+	V.Local.fTot.Declare(Float,0)
+	V.Local.sCol.Declare(String,"")
+	
+	v.Local.fTot1.Declare(float, 0)
+	v.Local.fTot2.Declare(float, 0)
+	v.Local.fTot3.Declare(float, 0)
+	v.Local.fTot4.Declare(float, 0)
+	v.Local.fTot5.Declare(float, 0)
+	v.Local.fTot6.Declare(float, 0)
+	v.Local.fTot7.Declare(float, 0)
+	v.Local.fTot8.Declare(float, 0)
+	v.Local.fTot9.Declare(float, 0)
+	v.Local.fTot10.Declare(float, 0)
+	v.Local.fTot11.Declare(float, 0)
+	v.Local.fTot12.Declare(float, 0)
+	v.Local.sTemp.Declare(String, "")
+	
+	'Arturo Almaguer 5/26/22=======================================================
+	F.Intrinsic.Control.SelectCase(V.Args.Column)
+
+		F.Intrinsic.Control.Case("SELECT")
+			F.Data.DataTable.SetValue("Sur", V.Args.RowIndex, V.Args.Column, V.Args.Value)
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.Case("PART")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.Case("LOCATION")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.Case("SORT_CODE")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.Case("VENDOR")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.Case("NAME_VENDOR")
+			F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndSelect
+	'==============================================================================
+	
+	f.Intrinsic.String.Split(v.Args.Column, "_", v.Local.sTemp)
+	
+	Gui.FormSurcharge.cmdSave.Enabled(True)
+	'calculating total for selected month on the grid
+	f.Intrinsic.String.Build("Material_{0}", v.Local.sTemp(1), v.Local.sCol)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur",v.Local.sCol.UCase,V.Args.RowIndex,V.Local.fMat)
+	f.Intrinsic.String.Build("Silica_{0}", v.Local.sTemp(1), v.Local.sCol)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur",v.Local.sCol.UCase,V.Args.RowIndex,V.Local.fSil)
+	f.Intrinsic.String.Build("Energy_{0}", v.Local.sTemp(1), v.Local.sCol)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur",v.Local.sCol.UCase,V.Args.RowIndex,V.Local.fEng)
+	
+	F.Intrinsic.Math.Add(V.Local.fMat,V.Local.fEng,V.Local.fSil,V.Local.fTot)
+	
+	f.Intrinsic.String.Build("TOTAL_{0}", v.Local.sTemp(1), v.Local.sCol)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetCellValueByColumnName("GSur",v.Local.sCol, V.Args.RowIndex,V.Local.fTot)
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_1",V.Args.RowIndex,V.Local.fTot1)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_2",V.Args.RowIndex,V.Local.fTot2)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_3",V.Args.RowIndex,V.Local.fTot3)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_4",V.Args.RowIndex,V.Local.fTot4)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_5",V.Args.RowIndex,V.Local.fTot5)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_6",V.Args.RowIndex,V.Local.fTot6)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_7",V.Args.RowIndex,V.Local.fTot7)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_8",V.Args.RowIndex,V.Local.fTot8)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_9",V.Args.RowIndex,V.Local.fTot9)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_10",V.Args.RowIndex,V.Local.fTot10)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_11",V.Args.RowIndex,V.Local.fTot11)
+	Gui.FormSurcharge.GsGridControlSurcharge.GetCellValueByColumnName("GSur","TOTAL_12",V.Args.RowIndex,V.Local.fTot12)
+
+	f.Intrinsic.Math.Add(v.Local.fTot1, v.Local.fTot2, v.Local.fTot3, v.Local.fTot4, v.Local.fTot5, v.Local.fTot6, v.Local.fTot7, v.Local.fTot8, v.Local.fTot9, v.Local.fTot10, v.Local.fTot11, v.Local.fTot12, v.Local.fTot)
+	Gui.FormSurcharge.GsGridControlSurcharge.SetCellValueByColumnName("GSur","TOTAL",V.Args.RowIndex,V.Local.fTot)
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndTry
+Program.Sub.GsGridControlSurcharge_CellValueChanged.End
+
+'Arturo Almaguer 5/26/22=========================
+
+Program.Sub.SetContextMenuView.Start
+'This subroutine sets the grid context menus for the View Tab
+
+F.Intrinsic.Control.Try
+
+	GUI.FormSurcharge..ContextMenuCreate("ctxgsgcSur")
+	GUI.FormSurcharge.GsGridControlSurcharge.ContextMenuAttach("ctxgsgcSur")
+	GUI.FormSurcharge..ContextMenuAddItem("ctxgsgcSur","DeleteRecords",0,"Delete Record(s)")
+	GUI.FormSurcharge..ContextMenuAddItem("ctxgsgcSur","CopyCosts",0,"Copy Costs")
+	GUI.FormSurcharge..ContextMenuAddItem("ctxgsgcSur","ResetColumns",0,"Reset Columns")
+	
+	GUI.FormSurcharge..ContextMenuSetItemEventHandler("ctxgsgcSur","DeleteRecords","DeleteRecords")
+	GUI.FormSurcharge..ContextMenuSetItemEventHandler("ctxgsgcSur","CopyCosts","CopyCosts")
+	GUI.FormSurcharge..ContextMenuSetItemEventHandler("ctxgsgcSur","ResetColumns","MenuClickResetColumns")
+
+F.Intrinsic.Control.Catch
+	
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.EndTry
+Program.Sub.SetContextMenuView.End
+
+Program.Sub.DeleteRecords.Start
+'This subroutine allows the user to delete all selected records
+
+F.Intrinsic.Control.Try
+
+	V.Local.sReturn.Declare(String)
+	v.Local.iCounter.Declare(Long)
+	V.Local.sSQL.Declare(String)
+	
+	'Creating dataview from selected records on a filtered gv
+	GUI.FormSurcharge.GsGridControlSurcharge.FilterToWhereClause("GSur", V.Local.sReturn)
+	F.Intrinsic.Control.If(V.Local.sReturn,<>,"")
+	
+		F.Intrinsic.String.Build("{0} And [SELECT] = 'True'", V.Local.sReturn, V.Local.sReturn)
+		F.Data.DataView.Create("Sur", "dvSurcharge", 22, V.Local.sReturn,"")
+	
+	F.Intrinsic.Control.Else
+	
+		F.Data.DataView.Create("Sur", "dvSurcharge", 22, "[SELECT] = 'True'","")
+		
+	F.Intrinsic.Control.EndIf
+	
+	'Deleting selecting records directly on custom table
+	F.ODBC.Connection!Con.OpenCompanyConnection
+	F.Intrinsic.Control.For(V.Local.iCounter, 0, V.DataView.Sur!dvSurcharge.RowCount--, 1) 
+		F.Intrinsic.String.Build("delete from GCG_5690_SURCHARGE where SURCHARGE_YEAR = '{0}' and PART = '{1}' and LOCATION = '{2}' and SORT_CODE = '{3}';", V.DataView.Sur!dvSurcharge(V.Local.iCounter).SURCHARGE_YEAR!FieldValTrim, V.DataView.Sur!dvSurcharge(V.Local.iCounter).PART!FieldValTrim, V.DataView.Sur!dvSurcharge(V.Local.iCounter).LOCATION!FieldValTrim, V.DataView.Sur!dvSurcharge(V.Local.iCounter).SORT_CODE!FieldValTrim, V.Local.sSQL)
+		F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+	F.Intrinsic.Control.Next(V.Local.iCounter)
+	F.ODBC.Connection!Con.Close
+	
+	'Closing dv
+	F.Data.DataView.Close("Sur", "dvSurcharge")
+	
+	'Refreshing screen
+	F.Intrinsic.Control.CallSub("cmdRefresh_Click")
+
+F.Intrinsic.Control.Catch
+	
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.EndTry
+Program.Sub.DeleteRecords.End
+
+Program.Sub.CopyCosts.Start
+'This subroutine allows the user to copy all costs data from the selected record into the records in the gv
+
+F.Intrinsic.Control.Try
+
+	V.Local.sReturn.Declare(String)
+	V.Local.sMain.Declare(String)
+	V.Local.sMainFilter.Declare(String)
+	V.Local.sOtherFilter.Declare(String)
+	
+	'Creating 2 dataviews: one is the selected record which will be the main source of costs. Other one contains all other records whose costs data will be updated from main record.
+	GUI.FormSurcharge.GsGridControlSurcharge.FilterToWhereClause("GSur", V.Local.sReturn)
+	F.Intrinsic.Control.If(V.Local.sReturn,<>,"")
+	
+		F.Intrinsic.String.Build("{0} And [SELECT] = 'True'", V.Local.sReturn, V.Local.sMainFilter)
+		F.Data.DataView.Create("Sur", "dvMain", 22, V.Local.sMainFilter,"")
+		
+		F.Intrinsic.String.Build("{0} And [SELECT] = 'False'", V.Local.sReturn, V.Local.sOtherFilter)
+		F.Data.DataView.Create("Sur", "dvCopyCosts", 22, V.Local.sOtherFilter,"")
+		
+	F.Intrinsic.Control.Else
+	
+		F.Data.DataView.Create("Sur", "dvMain", 22, "[SELECT] = 'True'","")
+		F.Data.DataView.Create("Sur", "dvCopyCosts", 22, "[SELECT] = 'False'","")
+
+	F.Intrinsic.Control.EndIf
+	
+	'Updating costs values for all other records
+	F.Data.DataView.SetValue("Sur", "dvCopyCosts", "-1", "MATERIAL_1", V.DataView.Sur!dvMain(0).MATERIAL_1!FieldVal, "SILICA_1", V.DataView.Sur!dvMain(0).SILICA_1!FieldVal, "ENERGY_1", V.DataView.Sur!dvMain(0).ENERGY_1!FieldVal, "TOTAL_1", V.DataView.Sur!dvMain(0).TOTAL_1!FieldVal, "MATERIAL_2", V.DataView.Sur!dvMain(0).MATERIAL_2!FieldVal, "SILICA_2", V.DataView.Sur!dvMain(0).SILICA_2!FieldVal, "ENERGY_2", V.DataView.Sur!dvMain(0).ENERGY_2!FieldVal, "TOTAL_2", V.DataView.Sur!dvMain(0).TOTAL_2!FieldVal, "MATERIAL_3", V.DataView.Sur!dvMain(0).MATERIAL_3!FieldVal, "SILICA_3", V.DataView.Sur!dvMain(0).SILICA_3!FieldVal, "ENERGY_3", V.DataView.Sur!dvMain(0).ENERGY_3!FieldVal, "TOTAL_3", V.DataView.Sur!dvMain(0).TOTAL_3!FieldVal, "MATERIAL_4", V.DataView.Sur!dvMain(0).MATERIAL_4!FieldVal, "SILICA_4", V.DataView.Sur!dvMain(0).SILICA_4!FieldVal, "ENERGY_4", V.DataView.Sur!dvMain(0).ENERGY_4!FieldVal, "TOTAL_4", V.DataView.Sur!dvMain(0).TOTAL_4!FieldVal, "MATERIAL_5", V.DataView.Sur!dvMain(0).MATERIAL_5!FieldVal, "SILICA_5", V.DataView.Sur!dvMain(0).SILICA_5!FieldVal, "ENERGY_5", V.DataView.Sur!dvMain(0).ENERGY_5!FieldVal, "TOTAL_5", V.DataView.Sur!dvMain(0).TOTAL_5!FieldVal, "MATERIAL_6", V.DataView.Sur!dvMain(0).MATERIAL_6!FieldVal, "SILICA_6", V.DataView.Sur!dvMain(0).SILICA_6!FieldVal, "ENERGY_6", V.DataView.Sur!dvMain(0).ENERGY_6!FieldVal, "TOTAL_6", V.DataView.Sur!dvMain(0).TOTAL_6!FieldVal, "MATERIAL_7", V.DataView.Sur!dvMain(0).MATERIAL_7!FieldVal, "SILICA_7", V.DataView.Sur!dvMain(0).SILICA_7!FieldVal, "ENERGY_7", V.DataView.Sur!dvMain(0).ENERGY_7!FieldVal, "TOTAL_7", V.DataView.Sur!dvMain(0).TOTAL_7!FieldVal, "MATERIAL_8", V.DataView.Sur!dvMain(0).MATERIAL_8!FieldVal, "SILICA_8", V.DataView.Sur!dvMain(0).SILICA_8!FieldVal, "ENERGY_8", V.DataView.Sur!dvMain(0).ENERGY_8!FieldVal, "TOTAL_8", V.DataView.Sur!dvMain(0).TOTAL_8!FieldVal, "MATERIAL_9", V.DataView.Sur!dvMain(0).MATERIAL_9!FieldVal, "SILICA_9", V.DataView.Sur!dvMain(0).SILICA_9!FieldVal, "ENERGY_9", V.DataView.Sur!dvMain(0).ENERGY_9!FieldVal, "TOTAL_9", V.DataView.Sur!dvMain(0).TOTAL_9!FieldVal, "MATERIAL_10", V.DataView.Sur!dvMain(0).MATERIAL_10!FieldVal, "SILICA_10", V.DataView.Sur!dvMain(0).SILICA_10!FieldVal, "ENERGY_10", V.DataView.Sur!dvMain(0).ENERGY_10!FieldVal, "TOTAL_10", V.DataView.Sur!dvMain(0).TOTAL_10!FieldVal, "MATERIAL_11", V.DataView.Sur!dvMain(0).MATERIAL_11!FieldVal, "SILICA_11", V.DataView.Sur!dvMain(0).SILICA_11!FieldVal, "ENERGY_11", V.DataView.Sur!dvMain(0).ENERGY_11!FieldVal, "TOTAL_11", V.DataView.Sur!dvMain(0).TOTAL_11!FieldVal, "MATERIAL_12", V.DataView.Sur!dvMain(0).MATERIAL_12!FieldVal, "SILICA_12", V.DataView.Sur!dvMain(0).SILICA_12!FieldVal, "ENERGY_12", V.DataView.Sur!dvMain(0).ENERGY_12!FieldVal, "TOTAL_12", V.DataView.Sur!dvMain(0).TOTAL_12!FieldVal, "TOTAL", V.DataView.Sur!dvMain(0).TOTAL!FieldVal)
+	
+	'Setting main record's select value to false since costs have been copied
+	F.Data.DataView.SetValue("Sur", "dvMain", 0, "SELECT", False)
+	
+	'Closing dataviews
+	F.Data.DataView.Close("Sur", "dvMain")
+	F.Data.DataView.Close("Sur", "dvCopyCosts")
+	
+F.Intrinsic.Control.Catch
+	
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.EndTry
+Program.Sub.CopyCosts.End
+
+Program.Sub.Serialize.Start
+F.Intrinsic.Control.Try
+
+	V.Local.sSerialize.Declare(String)
+	
+	'For GSur
+	Gui.FormSurcharge.GsGridControlSurcharge.Serialize("GSur", V.Local.sSerialize)
+	F.Global.Registry.AddValue(V.Caller.User, V.Caller.CompanyCode,"GSur",5690,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM, V.Local.sSerialize)
+
+F.Intrinsic.Control.Catch
+
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.EndTry
+Program.Sub.Serialize.End
+
+Program.Sub.Deserialize.Start
+F.Intrinsic.Control.Try
+
+	V.Local.sSerialize.Declare(String)
+	
+	'For GSur
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"GSur",5690,1000,6,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize.Trim,<>,"")
+		Gui.FormSurcharge.GsGridControlSurcharge.Deserialize(V.Local.sSerialize)
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.EndTry
+Program.Sub.Deserialize.End
+
+Program.Sub.cmdRefresh_Click.Start
+'This subroutine refreshes the gv
+
+F.Intrinsic.Control.Try
+
+	F.Intrinsic.Control.If(V.Global.bLoadData)
+		F.Intrinsic.Control.CallSub(Serialize)
+	F.Intrinsic.Control.EndIf
+	
+	Gui.FormSurcharge.GsGridControlSurcharge.Visible(False)
+	Gui.FormSurcharge.GsGridControlSurcharge.SuspendLayout()
+		F.Intrinsic.Control.CallSub(Build_Empty_View_DT)
+		F.Intrinsic.Control.CallSub(Set_View_Properties)
+		f.Intrinsic.Control.CallSub(txtYear_KeyPressEnter)
+		F.Intrinsic.Control.CallSub(Deserialize)
+	Gui.FormSurcharge.GsGridControlSurcharge.ResumeLayout()
+	Gui.FormSurcharge.GsGridControlSurcharge.Visible(True)
+
+F.Intrinsic.Control.Catch
+
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdRefresh_Click.End
+
+Program.Sub.MenuClickResetColumns.Start
+'Deleting saved serializations
+
+F.Intrinsic.Control.Try
+
+	F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"GSur",5690,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,"")
+	
+	'Prevent RefreshScreen from doing Serialize.
+	V.Global.bLoadData.Set(False)
+	
+	F.Intrinsic.Control.CallSub(cmdRefresh_Click)
+
+F.Intrinsic.Control.Catch
+
+	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+		F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}","GCG_5690_Surcharge_Maint.g2u",V.Ambient.NewLine,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.CallSub(FormSurcharge_UnLoad)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.EndTry
+Program.Sub.MenuClickResetColumns.End
+
+Program.Sub.Comments.Start
+${$5$}$3.0.0.0$}$0
+${$6$}$apadilla$}$20220529175323204$}$Lag9STqBJOmNXSbd5+msRcBWPGz0aFqSzPePUG9qWbzDO6+PjNRGxe7GtiDdkY6nIYNbk/EcHzocVOzsUxQ1Ww==
+Program.Sub.Comments.End
